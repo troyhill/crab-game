@@ -5,7 +5,7 @@ crab.game <- function(pts = 0, rounds = 0){
                         verb = c(" eats ", " blocks ", " devours "))
   user <- readline("
 
-Sesarma, Spartina, Callinectes, shoot!  ")
+Sesarma, Spartina, Callinectes, shoot! Your choice: ")
   if(!user %in% answers$user) stop("You can only play 'Sesarma', 'Spartina', or 'Callinectes' ")
   comp <- answers$user[round(runif(1, 0.5, 3.5))]  # could also use sample()
   outcome.num <- answers[answers$user == user, paste0(comp, ".value")]  
