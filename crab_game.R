@@ -14,8 +14,8 @@ Sesarma, Spartina, Callinectes, shoot!  ")
   score <- sum(pts)
   invisible(score)
   outcome <- ifelse(outcome.num == 0, "It's a tie", ifelse(outcome.num == -1, paste0(comp,
-            answers$verb[answers$user == comp], user, "; you lost"), paste0(user,
-            answers$verb[answers$user == user], comp, "; you won")))
+              answers$verb[answers$user == comp], user, "; you lost"), paste0(user,
+              answers$verb[answers$user == user], comp, "; you won")))
   print(paste0("Computer played ", comp, ". ", outcome, "!"))
   print(paste0("Current score: ", score))
   cont <- readline("Play again? y/n ")
