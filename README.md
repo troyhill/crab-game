@@ -1,7 +1,7 @@
 crab-game
 =========
 
-rock-paper-scissors, with a coastal theme
+Rock-paper-scissors, with a coastal theme. Played in R.
 
 Rules: 
 - Sesarma eats Spartina
