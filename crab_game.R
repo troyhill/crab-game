@@ -1,5 +1,5 @@
 
-game <- function(){
+crab.game <- function(){
   answers <- data.frame(user = c("Sesarma", "Spartina", "Callinectes"), Sesarma.value = c(0, -1, 1),
                         Spartina.value = c(1, 0, -1), Callinectes.value = c(-1, 1, 0), 
                         verb = c(" eats ", " blocks ", " devours "))
