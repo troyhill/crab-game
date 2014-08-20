@@ -8,4 +8,4 @@ Rules:
 - Spartina blocks Callinectes
 - Callinectes eats Sesarma
 
-To play, run the code in crab_game.R and then type <code>crab.game()</code> into the R command prompt. 
+To play, run the code in [crab_game.R](https://github.com/troyhill/crab-game/blob/master/crab_game.R) and then type <code>crab.game()</code> into the R command prompt. 
