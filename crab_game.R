@@ -7,7 +7,7 @@ crab.game <- function(pts = 0, rounds = 0){
 
 Sesarma, Spartina, Callinectes, shoot! Your choice: ")
   if(!user %in% answers$user) stop("You can only play 'Sesarma', 'Spartina', or 'Callinectes' ")
-  comp <- answers$user[round(runif(1, 0.5, 3.5))]  # could also use sample()
+  comp <- answers$user[round(runif(1, 0.5, 3.5))]
   outcome.num <- answers[answers$user == user, paste0(comp, ".value")]  
   rounds <- ifelse(rounds == 0, 1, rounds + 1)
   pts <- c(pts, outcome.num)
@@ -16,9 +16,6 @@ Sesarma, Spartina, Callinectes, shoot! Your choice: ")
               answers$verb[answers$user == comp], user, "; you lost"), paste0(user,
               answers$verb[answers$user == user], comp, "; you won")))
   print(paste0("Computer played ", comp, ". ", outcome, "!"))
-  print(paste0("Current score: ", score, " points over ", rounds, " rounds"))
-  # cont <- readline("Play again? y/n ")
-  #if(cont == "y" | cont == "yes") {
+  print(paste0("Score: ", score, " points over ", rounds, " rounds"))
   crab.game(pts = score, rounds = rounds)
-  #}
 }
